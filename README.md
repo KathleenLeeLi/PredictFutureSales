@@ -2,7 +2,7 @@
 
 COMP9417 Project Repository by Zixin Zhou (Cindy) and Sophia Tran
 
-## Overview:
+## Overview
 Predicting total sales for every product and store in the next month using different ML algorithms
 
 **input** - daily historical sales data and a test set
@@ -10,7 +10,7 @@ Predicting total sales for every product and store in the next month using diffe
 
 **output** - total amount of products sold in every shop for the test set
 
-## Data:
+## Data
 ### File descriptions:
 - **sales_train.csv** - the training set. Daily historical data from January 2013 to October 2015.
 - **test.csv** - the test set. You need to forecast the sales for these shops and products for November 2015.
