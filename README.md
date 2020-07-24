@@ -6,7 +6,7 @@ COMP9417 Project Repository by Zixin Zhou (Cindy) and Sophia Tran
 Predicting total sales for every product and store in the next month using different ML algorithms
 
 **input** - daily historical sales data and a test set
-*Note: list of shops and products slightly changes every month*
+(*Note: list of shops and products slightly changes every month*)
 
 **output** - total amount of products sold in every shop for the test set
 
