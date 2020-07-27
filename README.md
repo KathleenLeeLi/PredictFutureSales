@@ -31,3 +31,34 @@ Predicting total sales for every product and store in the next month using diffe
 - **item_name** - name of item
 - **shop_name** - name of shop
 - **item_category_name** - name of item category
+
+### Files:
+#### sales_train.csv
+- date
+- date_block_num
+- shop_id
+- item_id
+- item_price
+- item_cnt_day
+
+#### test.csv
+- ID
+- shop_id
+- item_id
+
+#### sample_submission.csv
+- ID
+- item_cnt_month
+
+#### items.csv
+- item_name
+- item_id
+- item_category_id
+
+#### item_categories.csv
+- item_category_name
+- item_category_id
+
+#### shops.csv
+- shop_name
+- shop_id
