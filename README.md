@@ -19,50 +19,45 @@ Predicting total sales for every product and store in the next month using diffe
 - **item_categories.csv**  - supplemental information about the items categories.
 - **shops.csv** - supplemental information about the shops.
 
-### Data fields:
-- **ID** - an Id that represents a (Shop, Item) tuple within the test set
-- **shop_id** - unique identifier of a shop
-- **item_id** - unique identifier of a product
-- **item_category_id** - unique identifier of item category
-- **item_cnt_day** - number of products sold. You are predicting a monthly amount of this measure
-- **item_price** - current price of an item
-- **date** - date in format dd/mm/yyyy
-- **date_block_num** - a consecutive month number, used for convenience. January 2013 is 0, February 2013 is 1,..., October 2015 is 33
-- **item_name** - name of item
-- **shop_name** - name of shop
-- **item_category_name** - name of item category
-
 ### Files:
 #### sales_train.csv
 | varaible name | description |
 | ------------- | ----------- |
 | date | date in format dd/mm/yyyy|
-
-- date
-- date_block_num
-- shop_id
-- item_id
-- item_price
-- item_cnt_day
+| date_block_num | a consecutive month number, used for convenience. January 2013 is 0, February 2013 is 1,..., October 2015 is 33 |
+| shop_id | unique identifier of a shop |
+| item_id | unique identifier of a product |
+| item_price | current price of an item |
+| item_cnt_day | number of products sold. You are predicting a monthly amount of this measure |
 
 #### test.csv
-- ID
-- shop_id
-- item_id
+| varaible name | description |
+| ------------- | ----------- |
+| ID | an Id that represents a (Shop, Item) tuple within the test set |
+| shop_id | unique identifier of a shop |
+| item_id | unique identifier of a product |
 
 #### sample_submission.csv
-- ID
-- item_cnt_month
+| varaible name | description |
+| ------------- | ----------- |
+| ID | an Id that represents a (Shop, Item) tuple within the test set |
+| item_cnt_day | number of products sold. You are predicting a monthly amount of this measure |
 
 #### items.csv
-- item_name
-- item_id
-- item_category_id
+| varaible name | description |
+| ------------- | ----------- |
+| item_name | name of item |
+| item_id | unique identifier of a product |
+| item_category_id | unique identifier of item category |
 
 #### item_categories.csv
-- item_category_name
-- item_category_id
+| varaible name | description |
+| ------------- | ----------- |
+| item_category_name | name of item category |
+| item_category_id | unique identifier of item category |
 
 #### shops.csv
-- shop_name
-- shop_id
+| varaible name | description |
+| ------------- | ----------- |
+| shop_name | name of shop |
+| shop_id | unique identifier of a shop |

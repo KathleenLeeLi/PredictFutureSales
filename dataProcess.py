@@ -1,13 +1,7 @@
 #!/usr/bin/env python3
 
-import pandas as pd
 
-parser = argparse.ArgumentParser()
-parser.add_argument('--init',type=float,default=0.1,help='initial weight size')
-parser.add_argument('--hid',type=int,default='10',help='number of hidden units')
-parser.add_argument('--lr',type=float,default=0.01,help='learning rate')
-parser.add_argument('--epochs',type=int,default='100000',help='max training epochs')
-args = parser.parse_args()
+import pandas as pd
 
 train = pd.read_csv('../data/sales_train.csv')
 test = pd.read_csv('../data/test.csv')
