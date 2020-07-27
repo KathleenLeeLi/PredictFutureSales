@@ -34,6 +34,10 @@ Predicting total sales for every product and store in the next month using diffe
 
 ### Files:
 #### sales_train.csv
+| varaible name | description |
+| ------------- | ----------- |
+| date | date in format dd/mm/yyyy|
+
 - date
 - date_block_num
 - shop_id
