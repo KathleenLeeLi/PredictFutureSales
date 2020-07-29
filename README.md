@@ -61,3 +61,7 @@ Predicting total sales for every product and store in the next month using diffe
 | ------------- | ----------- |
 | shop_name | name of shop |
 | shop_id | unique identifier of a shop |
+
+lstm score: 1.02012
+conv score: 1.13260
+linear score:
