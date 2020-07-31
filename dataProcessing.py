@@ -3,8 +3,6 @@
 import pandas as pd
 import numpy as np
 
-from sklearn.preprocessing import MinMaxScaler
-
 def loadData():
     train = pd.read_csv('./data/sales_train.csv')
     test = pd.read_csv('./data/test.csv')

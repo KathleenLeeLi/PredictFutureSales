@@ -10,6 +10,38 @@ Predicting total sales for every product and store in the next month using diffe
 
 **output** - total amount of products sold in every shop for the test set
 
+## File Directories
+root - all the python files user to perform prediction
+- **ConvolutionalApproach.py** the convolutional approach running script
+- **dataProcessing.py** perform all the data preprocessing and data exploration
+- **linearModelApproach.py** the linear neural network approach running script
+- **lstmApproach.py** the LSTM network approach running script
+- **Models.py** contains all models used in the running scripts (lstm, convolutional, linear)
+- **plotting.py** performs plotting for losses in each epoch during training
+data - contains all data used in prediction
+output - the loss function diagram in each epoch from prediction
+result - the final result of prediction
+
+## Technology Dependencies
+| Technology name | Version |
+| --------------- | ------- |
+| pandas | 1.0.5 |
+| numpy | 1.18.5 |
+| Keras | 2.4.3 |
+| matplotlib | 3.2.2 |
+
+## Instruction of Running
+1. Intall all dependencies by typing into command line:
+    `pip3 install pandas`
+    `pip3 install numpy`
+    `pip3 install Keras`
+    `pip3 install matplotlib`
+2. Run Convolutional Approach by typing into command line `python3 ConvolutionalApproach.py`. This should generate an output in "result/convolution_predicts.csv"
+3. Run LSTM Approach by typing into command line `python3 lstmApproach.py`. This should generate an output in "result/lstm_predicts.csv"
+4. Run Linear Network Approach by typing into command line `python3 linearModelApproach.py`. This should generate an output in "result/linear_predicts.csv"
+
+You can terminate the process anytime by hitting Ctrl + C
+
 ## Data
 ### File descriptions:
 - **sales_train.csv** - the training set. Daily historical data from January 2013 to October 2015.
@@ -61,7 +93,3 @@ Predicting total sales for every product and store in the next month using diffe
 | ------------- | ----------- |
 | shop_name | name of shop |
 | shop_id | unique identifier of a shop |
-
-lstm score: 1.02012
-conv score: 1.13260
-linear score:

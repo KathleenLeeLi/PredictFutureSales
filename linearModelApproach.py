@@ -20,9 +20,9 @@ plot_losses = TrainingPlot()
 
 model = createLinearModel()
 model.summary()
-model.fit(X, y, batch_size=4096, epochs=10, callbacks=[plot_losses])
+model.fit(X[:,:,0], y, batch_size=4096, epochs=10, callbacks=[plot_losses])
 
-submission=model.predict(X_test)
+submission=model.predict(X_test[:,:,0])
 submission=submission.clip(0,20)
 submission=pd.DataFrame({'ID':test['ID'], 'item_cnt_month':submission.ravel()})
-submission.to_csv('linear_predicts.csv',index=False)
+submission.to_csv('result/linear_predicts.csv',index=False)
