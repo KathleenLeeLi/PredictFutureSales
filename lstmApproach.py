@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 
 from dataProcessing import loadData, dataProcess
+from plotting import TrainingPlot
 from Models import createLSTMModel
 
 train, test, submission, items, itemCategory, shops = loadData()
@@ -24,8 +25,12 @@ X_test = np.expand_dims(dataset.values[:,1:], axis=2)
 # normalisedTrainData_timebased = createTimeSeries(normalised_X, normalised_Y, timestep)
 # print(normalisedTrainData_timebased[:5])
 
+filename = 'output/training_plot.jpg'
+plot_losses = TrainingPlot()
+
 model = createLSTMModel()
-model.fit(X, y, batch_size=4096, epochs=10)
+model.summary()
+model.fit(X, y, batch_size=4096, epochs=10, callbacks=[plot_losses])
 
 submission=model.predict(X_test)
 submission=submission.clip(0,20)
