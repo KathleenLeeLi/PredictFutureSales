@@ -29,12 +29,16 @@ def dataProcess(train, test):
     # merge rows with same shop_id and item_id
     dataset = train.pivot_table(index = ['shop_id','item_id'],values = ['item_cnt_day'],columns = ['date_block_num'],fill_value = 0,aggfunc='sum')
     dataset.reset_index(inplace=True)
+    print(dataset)
 
     # join with test table to see matching for store and item
     dataset = pd.merge(test, dataset, on=['shop_id', 'item_id'], how='left')
     dataset.fillna(0, inplace=True)
+    print(dataset)
+
     # drop id as well because ID = index
     dataset.drop(['shop_id','item_id','ID'], inplace=True, axis=1)
+    print(dataset)
 
     return dataset
 

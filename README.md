@@ -18,6 +18,7 @@ root - all the python files user to perform prediction
 - **lstmApproach.py** the LSTM network approach running script
 - **Models.py** contains all models used in the running scripts (lstm, convolutional, linear)
 - **plotting.py** performs plotting for losses in each epoch during training
+- **dataExploration.py** performs data exploration on training, test and submission data
 data - contains all data used in prediction
 output - the loss function diagram in each epoch from prediction
 result - the final result of prediction
@@ -36,9 +37,10 @@ result - the final result of prediction
     `pip3 install numpy`
     `pip3 install Keras`
     `pip3 install matplotlib`
-2. Run Convolutional Approach by typing into command line `python3 ConvolutionalApproach.py`. This should generate an output in "result/convolution_predicts.csv"
-3. Run LSTM Approach by typing into command line `python3 lstmApproach.py`. This should generate an output in "result/lstm_predicts.csv"
-4. Run Linear Network Approach by typing into command line `python3 linearModelApproach.py`. This should generate an output in "result/linear_predicts.csv"
+2. Run data exploration by typing into command line `python3 dataExploration.py`. This should print out the result in command line
+3. Run Convolutional Approach by typing into command line `python3 ConvolutionalApproach.py`. This should generate an output in "result/convolution_predicts.csv"
+4. Run LSTM Approach by typing into command line `python3 lstmApproach.py`. This should generate an output in "result/lstm_predicts.csv"
+5. Run Linear Network Approach by typing into command line `python3 linearModelApproach.py`. This should generate an output in "result/linear_predicts.csv"
 
 You can terminate the process anytime by hitting Ctrl + C
 
