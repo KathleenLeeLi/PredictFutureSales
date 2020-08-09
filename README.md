@@ -22,9 +22,9 @@ Predicting total sales for every product and store in the next month using diffe
 ## File Directories
 data - contains all data used in prediction (this is uploaded to google drive)
 
-output - the loss function diagram in each epoch from prediction (this would be generated when running the code)
+output - the loss function diagram in each epoch from prediction (this would be generated when running the code, also accessible from: https://drive.google.com/drive/folders/1pwEPe3AoYzYWHFDV-4hVpxA2SqOJPd00?usp=sharing)
 
-result - the final result of prediction
+result - the final result of prediction (this would be generated when running the code, also accessible from: https://drive.google.com/drive/folders/1X4N8n4yuJw8QgVd51Av1dH5Pr-z5KKrq?usp=sharing)
 
 root - all the python files user to perform prediction
 - **ConvolutionalApproach.py** the convolutional approach running script
