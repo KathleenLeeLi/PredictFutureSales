@@ -16,6 +16,9 @@ Predicting total sales for every product and store in the next month using diffe
 **output** - total amount of products sold in every shop for the test set
 
 ## File Directories
+data - contains all data used in prediction (this is uploaded to google drive)
+output - the loss function diagram in each epoch from prediction (this would be generated when running the code)
+result - the final result of prediction
 root - all the python files user to perform prediction
 - **ConvolutionalApproach.py** the convolutional approach running script
 - **dataProcessing.py** perform all the data preprocessing and data exploration
@@ -24,9 +27,6 @@ root - all the python files user to perform prediction
 - **Models.py** contains all models used in the running scripts (lstm, convolutional, linear)
 - **plotting.py** performs plotting for losses in each epoch during training
 - **dataExploration.py** performs data exploration on training, test and submission data
-data - contains all data used in prediction (this is uploaded to google drive)
-output - the loss function diagram in each epoch from prediction (this would be generated when running the code)
-result - the final result of prediction
 
 ## Technology Dependencies
 | Technology name | Version |
