@@ -7,6 +7,10 @@ Due to restricted size of submission. The data we used for the task is uploaded 
 
 Please download from link, unzip and store it in the same directory as Models.py to before running it.
 
+Also, the output about loss diagrams is uploaded in: https://drive.google.com/drive/folders/1pwEPe3AoYzYWHFDV-4hVpxA2SqOJPd00?usp=sharing
+
+the output about training result is uploaded in: https://drive.google.com/drive/folders/1X4N8n4yuJw8QgVd51Av1dH5Pr-z5KKrq?usp=sharing
+
 ## Overview
 Predicting total sales for every product and store in the next month using different ML algorithms
 
