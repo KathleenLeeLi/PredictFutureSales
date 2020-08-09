@@ -24,8 +24,8 @@ root - all the python files user to perform prediction
 - **Models.py** contains all models used in the running scripts (lstm, convolutional, linear)
 - **plotting.py** performs plotting for losses in each epoch during training
 - **dataExploration.py** performs data exploration on training, test and submission data
-data - contains all data used in prediction
-output - the loss function diagram in each epoch from prediction
+data - contains all data used in prediction (this is uploaded to google drive)
+output - the loss function diagram in each epoch from prediction (this would be generated when running the code)
 result - the final result of prediction
 
 ## Technology Dependencies
@@ -46,6 +46,8 @@ result - the final result of prediction
 3. Run Convolutional Approach by typing into command line `python3 ConvolutionalApproach.py`. This should generate an output in "result/convolution_predicts.csv"
 4. Run LSTM Approach by typing into command line `python3 lstmApproach.py`. This should generate an output in "result/lstm_predicts.csv"
 5. Run Linear Network Approach by typing into command line `python3 linearModelApproach.py`. This should generate an output in "result/linear_predicts.csv"
+
+Note that when running the scripts, it will also create a folder caller output and generate the loss diagram for each epochs in the output folder.
 
 You can terminate the process anytime by hitting Ctrl + C
 
