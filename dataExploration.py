@@ -1,4 +1,5 @@
 from dataProcessing import dataExploration, loadData, dataProcess
+from Models import createConvolutionalModel
 
 train, test, submission, items, itemCategory, shops = loadData()
 

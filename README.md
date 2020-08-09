@@ -2,6 +2,9 @@
 
 COMP9417 Project Repository by Zixin Zhou (Cindy) and Sophia Tran
 
+## Note
+Due to restricted size of submission. The data we used for the task is uploaded in https://drive.google.com/drive/folders/1BMnVfSWcoCCJxN610-1hfqun9NVS3Bg9?usp=sharing please download and store it in the same directory as Models.py to before running it.
+
 ## Overview
 Predicting total sales for every product and store in the next month using different ML algorithms
 
